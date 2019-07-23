@@ -20,18 +20,18 @@ namespace proyecto1
         private void button1_Click(object sender, EventArgs e)
         {
             
-            var clientes1 = new Cliente();
+            var clientes1 = new Clientes();
             clientes1.Id = 1;
             clientes1.Nombre = "Angela";
             clientes1.Ciudad = "El progreso";
 
-            Cliente clientes2 = new Cliente();
+            Clientes clientes2 = new Clientes();
             clientes2.Id = 2;
             clientes2.Nombre = "Jose";
             clientes2.Ciudad = "San pedro sula";
 
             
-            var listadeclientes = new List<Cliente>();
+            var listadeclientes = new List<Clientes>();
             listadeclientes.Add(clientes1);
             listadeclientes.Add(clientes2);
 
@@ -48,15 +48,7 @@ namespace proyecto1
         }
     }
 
-    public class Cliente
-    {
-
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public int Telefono { get; set; }
-        public string Ciudad { get; set; }
-        public string Direccion { get; set; }
-    }
+    
 }
     
 
