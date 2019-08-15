@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proyecto1
+namespace herencia
 {
-    public class Ciudad
+    public class Villano: Personaje
     {
-        public int Id { get; set; }
-        public string Descripcion { get; set; }
     }
 }

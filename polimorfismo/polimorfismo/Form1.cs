@@ -1,5 +1,4 @@
-﻿using proyecto1.BL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,32 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace proyecto1
+
+namespace polimorfismo
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-
-            var clientesBL = new ClientesBL();
-            listadeClientesBindingSource.DataSource = clientesBL.ListadeClientes;
-
-            var ciudadBL = new CiudadBL();
-            listadeCiudadBindingSource.DataSource = ciudadBL.ListadeCiudad;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            var perro = new pitbull();
+            perro.Nombre = "Firulais";
+            perro.Comer();
+            perro.Ladrar();
+            
         }
     }
-    }
-
-    
-
-    
-
-    
-
+}
