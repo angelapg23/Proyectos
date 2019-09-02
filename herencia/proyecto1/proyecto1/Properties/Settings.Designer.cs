@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace polimorfismo.Properties
+namespace proyecto1.Properties
 {
 
 
